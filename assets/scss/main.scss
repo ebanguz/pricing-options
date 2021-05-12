@@ -1,9 +1,12 @@
 @import 'abstracts/variables';
-// 
-@import 'base/globals';
+//
 @import 'base/typography';
+@import 'base/globals';
 //
 @import 'components/buttons';
+@import 'components/toggle';
+@import 'components/form';
+@import 'components/card';
 //
 @import 'pages/index';
 //

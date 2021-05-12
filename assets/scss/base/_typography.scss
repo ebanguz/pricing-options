@@ -1,0 +1,27 @@
+$fontSize: 15px;
+$fontFamily: 'Montserrat',
+sans-serif;
+$fontWeight: 700;
+//
+.title {
+    margin: 0;
+}
+
+.header-title {
+    padding-top: 4.5625rem;
+    padding-bottom: 3rem;
+}
+
+label {
+    color: $lightGrayishBlue;
+}
+
+.card__type {
+    color: $grayishBlue;
+}
+
+.card__price {
+    font-size: 3.1875rem;
+    margin-bottom: 2.163rem;
+    margin-top: 2.163rem;
+}
