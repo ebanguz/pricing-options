@@ -1,0 +1,21 @@
+.card {
+    background: white;
+    padding: 1.9375rem 1.8125rem;
+    border-radius: .9rem;
+    //
+    &__list {
+        margin: 0 0 2rem 0;
+        padding: 0;
+        list-style: none;
+        //
+        li {
+            color: $grayishBlue;
+            font-weight: 100;
+            border-bottom: 1px solid lightgray;
+            padding: 1rem 0;
+            &:first-child {
+                border-top: 1px solid lightgray;
+            }
+        }
+    }
+}

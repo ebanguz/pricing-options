@@ -1,0 +1,34 @@
+input[type="checkbox"] {
+    appearance: none;
+    cursor: pointer;
+    &:focus {
+        outline: 0;
+    }
+}
+
+.toggle {
+    width: 3.25rem;
+    height: 2rem;
+    border-radius: 1rem;
+    position: relative;
+    margin: 0;
+    background: $gradientColor;
+    transition: all .2s ease;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0.225rem;
+        left: 0.225rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background: white;
+        box-shadow: 0 1px 2px rgba(44, 44, 44, .2);
+        transition: all .2s cubic-bezier(.5, .1, .75, 1.35);
+    }
+    &:checked {
+        &::after {
+            transform: translateX(1.25rem);
+        }
+    }
+}
