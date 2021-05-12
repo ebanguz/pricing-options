@@ -11,13 +11,14 @@ input[type="checkbox"] {
     height: 2rem;
     border-radius: 1rem;
     position: relative;
-    margin: 0;
+    margin: 0 .8rem;
     background: $gradientColor;
     transition: all .2s ease;
+    //
     &::after {
         content: '';
         position: absolute;
-        top: 0.225rem;
+        top: 0.29rem;
         left: 0.225rem;
         width: 1.5rem;
         height: 1.5rem;

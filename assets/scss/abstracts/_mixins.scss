@@ -1,2 +1,12 @@
-// - Mobile: 375px
-// - Desktop: 1440px
+@media (min-width: 64em) {
+    // styles go here
+}
+
+// 640px, 1024px, 1400px
+// 
+$breakpoints-up: ("large": "76.5rem");
+@mixin breakpoint-up($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}

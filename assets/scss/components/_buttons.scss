@@ -9,4 +9,23 @@
     border: none;
     background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     color: white;
+    transition: all .8s;
+    //
+    &:hover,
+    &:focus {
+        background: transparent;
+        color: hsl(237, 63%, 64%)
+    }
+    &-primary {
+        @include breakpoint-up(large) {
+            background: white;
+            color: hsl(237, 63%, 64%);
+            //
+            &:hover,
+            &:focus {
+                background: transparent;
+                color: white;
+            }
+        }
+    }
 }
