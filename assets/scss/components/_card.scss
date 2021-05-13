@@ -1,7 +1,7 @@
 .card {
     background: white;
     padding: 2em;
-    border-radius: .9rem;
+    border-radius: .7rem;
     margin-bottom: 2em;
     width: clamp(241px, 90%, 347px);
     box-shadow: 0 10px 40px 5px rgba(163, 168, 240, 0.2);
@@ -24,7 +24,7 @@
         :is(span, li, h2) {
             color: white;
         }
-        padding: 3em 2em;
+        padding: 3.5em 2em;
         background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     }
 }

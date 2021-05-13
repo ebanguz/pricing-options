@@ -8,8 +8,8 @@ $fontWeight: 700;
 }
 
 .header-title {
-    padding-top: 4.5625em;
-    padding-bottom: 2.5em;
+    padding: 2.5em 0 1.5em;
+    color: $grayishBlue;
 }
 
 label {
@@ -22,8 +22,7 @@ label {
 
 .card__price {
     font-size: 3.4rem;
-    margin-bottom: 1.163rem;
-    margin-top: 1.163rem;
+    margin: 1.163rem 0;
     @include breakpoint-up(large) {
         font-size: 4rem;
     }
