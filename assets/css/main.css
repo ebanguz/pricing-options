@@ -85,6 +85,7 @@ a:visited {
 .button:hover, .button:focus {
   background: transparent;
   color: #696fdd;
+  border: 1px solid #696fdd;
 }
 
 @media (min-width: 76.5rem) {
@@ -95,6 +96,7 @@ a:visited {
   .button-primary:hover, .button-primary:focus {
     background: transparent;
     color: white;
+    border: 1px solid white;
   }
 }
 
@@ -172,7 +174,6 @@ form .container {
 
 .card__list li {
   color: #6d708d;
-  font-weight: 100;
   border-bottom: 1px solid lightgray;
   padding: 1rem 0;
 }

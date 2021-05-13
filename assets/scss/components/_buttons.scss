@@ -14,7 +14,8 @@
     &:hover,
     &:focus {
         background: transparent;
-        color: hsl(237, 63%, 64%)
+        color: hsl(237, 63%, 64%);
+        border: 1px solid hsl(237, 63%, 64%);
     }
     &-primary {
         @include breakpoint-up(large) {
@@ -25,6 +26,7 @@
             &:focus {
                 background: transparent;
                 color: white;
+                border: 1px solid white;
             }
         }
     }
