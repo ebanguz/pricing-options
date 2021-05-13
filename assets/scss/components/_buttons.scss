@@ -18,16 +18,14 @@
         border: 1px solid hsl(237, 63%, 64%);
     }
     &-primary {
-        @include breakpoint-up(large) {
-            background: white;
-            color: hsl(237, 63%, 64%);
-            //
-            &:hover,
-            &:focus {
-                background: transparent;
-                color: white;
-                border: 1px solid white;
-            }
+        background: white;
+        color: hsl(237, 63%, 64%);
+        //
+        &:hover,
+        &:focus {
+            background: transparent;
+            color: white;
+            border: 1px solid white;
         }
     }
 }

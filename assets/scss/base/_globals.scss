@@ -15,13 +15,13 @@ body {
 }
 
 main {
-    padding-bottom: 1rem;
+    padding-bottom: 1em;
 }
 
 .container {
     width: clamp(16rem, 90vw, 70rem);
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 1.5em;
     position: relative;
 }
 
@@ -32,10 +32,10 @@ a:visited {
 }
 
 .attribution {
-    padding-bottom: 1rem;
+    padding-bottom: 1em;
     font-size: 11px;
     text-align: center;
     a {
-        color: hsl(228, 45%, 44%);
+        color: hsl(0, 0%, 0%);
     }
 }

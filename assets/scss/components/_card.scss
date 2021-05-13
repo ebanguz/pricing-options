@@ -1,34 +1,31 @@
 .card {
     background: white;
-    padding: 2rem;
+    padding: 2em;
     border-radius: .9rem;
-    margin-bottom: 2rem;
-    width: clamp(241px, 90%, 400px);
+    margin-bottom: 2em;
+    width: clamp(241px, 90%, 347px);
     box-shadow: 0 10px 40px 5px rgba(163, 168, 240, 0.2);
     //
     &__list {
-        margin: 0 0 2rem 0;
+        margin: 0 0 2em 0;
         padding: 0;
         list-style: none;
         //
         li {
             color: $grayishBlue;
             border-bottom: 1px solid lightgray;
-            padding: 1rem 0;
+            padding: 1em 0;
             &:first-child {
                 border-top: 1px solid lightgray;
             }
         }
     }
-    @include breakpoint-up(large) {
-        margin: 0;
-        &-primary {
-            :is(span, li, h2) {
-                color: white;
-            }
-            padding: 4rem 2rem;
-            background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    &-primary {
+        :is(span, li, h2) {
+            color: white;
         }
+        padding: 3em 2em;
+        background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     }
 }
 
@@ -40,6 +37,5 @@
     //
     @include breakpoint-up(large) {
         flex-direction: row;
-        align-items: center;
     }
 }

@@ -8,8 +8,8 @@ $fontWeight: 700;
 }
 
 .header-title {
-    padding-top: 4.5625rem;
-    padding-bottom: 2.5rem;
+    padding-top: 4.5625em;
+    padding-bottom: 2.5em;
 }
 
 label {
@@ -21,7 +21,10 @@ label {
 }
 
 .card__price {
-    font-size: 4rem;
+    font-size: 3.4rem;
     margin-bottom: 1.163rem;
     margin-top: 1.163rem;
+    @include breakpoint-up(large) {
+        font-size: 4rem;
+    }
 }

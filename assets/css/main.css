@@ -4,8 +4,8 @@
 }
 
 .header-title {
-  padding-top: 4.5625rem;
-  padding-bottom: 2.5rem;
+  padding-top: 4.5625em;
+  padding-bottom: 2.5em;
 }
 
 label {
@@ -17,9 +17,15 @@ label {
 }
 
 .card__price {
-  font-size: 4rem;
+  font-size: 3.4rem;
   margin-bottom: 1.163rem;
   margin-top: 1.163rem;
+}
+
+@media (min-width: 76.5rem) {
+  .card__price {
+    font-size: 4rem;
+  }
 }
 
 *,
@@ -40,13 +46,13 @@ body {
 }
 
 main {
-  padding-bottom: 1rem;
+  padding-bottom: 1em;
 }
 
 .container {
   width: clamp(16rem, 90vw, 70rem);
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1.5em;
   position: relative;
 }
 
@@ -57,13 +63,13 @@ a:visited {
 }
 
 .attribution {
-  padding-bottom: 1rem;
+  padding-bottom: 1em;
   font-size: 11px;
   text-align: center;
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: black;
 }
 
 .button {
@@ -88,16 +94,15 @@ a:visited {
   border: 1px solid #696fdd;
 }
 
-@media (min-width: 76.5rem) {
-  .button-primary {
-    background: white;
-    color: #696fdd;
-  }
-  .button-primary:hover, .button-primary:focus {
-    background: transparent;
-    color: white;
-    border: 1px solid white;
-  }
+.button-primary {
+  background: white;
+  color: #696fdd;
+}
+
+.button-primary:hover, .button-primary:focus {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
 }
 
 input[type="checkbox"] {
@@ -153,21 +158,21 @@ form .container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 4.75rem;
+  margin-bottom: 4.4em;
 }
 
 .card {
   background: white;
-  padding: 2rem;
+  padding: 2em;
   border-radius: .9rem;
-  margin-bottom: 2rem;
-  width: clamp(241px, 90%, 400px);
+  margin-bottom: 2em;
+  width: clamp(241px, 90%, 347px);
   -webkit-box-shadow: 0 10px 40px 5px rgba(163, 168, 240, 0.2);
           box-shadow: 0 10px 40px 5px rgba(163, 168, 240, 0.2);
 }
 
 .card__list {
-  margin: 0 0 2rem 0;
+  margin: 0 0 2em 0;
   padding: 0;
   list-style: none;
 }
@@ -175,25 +180,21 @@ form .container {
 .card__list li {
   color: #6d708d;
   border-bottom: 1px solid lightgray;
-  padding: 1rem 0;
+  padding: 1em 0;
 }
 
 .card__list li:first-child {
   border-top: 1px solid lightgray;
 }
 
-@media (min-width: 76.5rem) {
-  .card {
-    margin: 0;
-  }
-  .card-primary {
-    padding: 4rem 2rem;
-    background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
-    background: linear-gradient(to right, #a3a8f0, #696fdd);
-  }
-  .card-primary :is(span, li, h2) {
-    color: white;
-  }
+.card-primary {
+  padding: 3em 2em;
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
+}
+
+.card-primary :is(span, li, h2) {
+  color: white;
 }
 
 .cards-container {
@@ -218,9 +219,6 @@ form .container {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
