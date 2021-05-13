@@ -4,6 +4,7 @@
     border-radius: .9rem;
     margin-bottom: 2rem;
     width: clamp(241px, 90%, 400px);
+    box-shadow: 0 10px 40px 5px rgba(163, 168, 240, 0.2);
     //
     &__list {
         margin: 0 0 2rem 0;

@@ -17,9 +17,9 @@ label {
 }
 
 .card__price {
-  font-size: 3.1875rem;
-  margin-bottom: 2.163rem;
-  margin-top: 2.163rem;
+  font-size: 4rem;
+  margin-bottom: 1.163rem;
+  margin-top: 1.163rem;
 }
 
 *,
@@ -34,7 +34,13 @@ body {
   font: 700 15px "Montserrat", sans-serif;
   text-align: center;
   color: #494c5f;
-  background: #f6f6fe;
+  background: url("../../../images/bg-bottom.svg"), url("../../../images/bg-top.svg"), #f6f6fe;
+  background-repeat: no-repeat;
+  background-position: bottom left, top right;
+}
+
+main {
+  padding-bottom: 1rem;
 }
 
 .container {
@@ -48,6 +54,16 @@ a,
 a:visited {
   color: inherit;
   text-decoration: none;
+}
+
+.attribution {
+  padding-bottom: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
 }
 
 .button {
@@ -108,7 +124,7 @@ input[type="checkbox"]:focus {
 .toggle::after {
   content: '';
   position: absolute;
-  top: 0.29rem;
+  top: 0.25rem;
   left: 0.225rem;
   width: 1.5rem;
   height: 1.5rem;
@@ -144,6 +160,8 @@ form .container {
   border-radius: .9rem;
   margin-bottom: 2rem;
   width: clamp(241px, 90%, 400px);
+  -webkit-box-shadow: 0 10px 40px 5px rgba(163, 168, 240, 0.2);
+          box-shadow: 0 10px 40px 5px rgba(163, 168, 240, 0.2);
 }
 
 .card__list {
