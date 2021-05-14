@@ -85,23 +85,23 @@ a:visited {
   color: white;
   -webkit-transition: all .8s;
   transition: all .8s;
+  border: 1px solid #696fdd;
 }
 
 .button:hover, .button:focus {
   background: transparent;
   color: #696fdd;
-  border: 1px solid #696fdd;
 }
 
 .button-primary {
   background: white;
   color: #696fdd;
+  border: 1px solid white;
 }
 
 .button-primary:hover, .button-primary:focus {
   background: transparent;
   color: white;
-  border: 1px solid white;
 }
 
 input[type="checkbox"] {
@@ -147,7 +147,7 @@ input[type="checkbox"]:focus {
           transform: translateX(1.25rem);
 }
 
-form .container {
+.desicion-form .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
